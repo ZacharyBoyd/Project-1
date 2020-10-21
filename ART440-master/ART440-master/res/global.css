@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 10pt;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -103,11 +103,22 @@ div.item.mid {
 }
 div.item {
     background: #fcc;
-    min-height: 200px;
-    align-self: start;
+    min-height: 400px;
+		max-width: 250px;
+		align-self: center;
+
 	}
 div.image1 {
-	max-width: 200px;
+
+  background-repeat: no-repeat;
+	background-size: cover;
+	position: ;
+	background-position: center center;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	padding: 0;
 
 
 }
