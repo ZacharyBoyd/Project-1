@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	background-color: #11100F;
+	display: block;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Global styles begin*/
+body{font-family: 'Montserrat';}
+p{font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+		color: #EEEEEE;
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36pt;
+	line-height: 60pt;
+	color: #EEEEEE;
+	}
+/*Global styles end*/
+div.rtf{font-size: min(max(0.8em, 1.2vw), 1.2em);}
+      div.rtf p{font-size:1em; line-height:1.8em; margin:0 0 0.7em 0;}
+      div.rtf h1{font-size:2.5em; line-height:1.8em; font-weight:normal; margin:0 0 0.8em 0; text-transform:uppercase;}
+      div.rtf h2{font-size:1.8em; line-height:1.8em; font-weight:bold; margin:0 0 0.8em 0; text-transform:uppercase;}
+      div.rtf h3{font-size:1.5em; line-height:1.8em; font-weight:bold; margin:0 0 0.8em 0;}
+      div.rtf h4{font-size:1.2em; line-height:1.8em; font-weight:bold; margin:0 0 0.8em 0;}
+      div.rtf h5{font-size:1em; line-height:1.8em; font-weight:bold; margin:0 0 0.8em 0;}
+      div.rtf h6{font-size:1em; line-height:1.8em; font-weight:bold; margin:0 0 0.8em 0;}
+
+/*layout Begin*/
+div.main-block-holder {
+	position:relative;
+}
+
+div.main-block {
+	display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vh;
+  background: #11100F;
+  color: #eee;
+}
+
+div.main-img{
+  max-width: 900px;
+	justify-self:right;
+}
+
+div.main-img img {
+	width:100%;
+	height:100%;
+  object-fit: contain;
+	object-position: center right;
+	display:block;
+}
+div.main-text {
+align-self: center;
+ justify-content: center;
+}
+
+a.box-link{position:absolute; top:0; left:0; right:0; bottom:0;}
+a.box-link span{display:none;}
+
+div.content {
+	  max-width: 1200px;
+    min-height: 50vh;
+    background: ;
+    margin: 0 auto;
+    padding: 2vh;
+		grid-column-start: 2
+
+
+}
+div.block-4 {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vh;
+}
+div.item.mid {
+    margin: 0 0 2vh 0;
+}
+div.item {
+    background: #fcc;
+    min-height: 200px;
+
+		align-self: start;
+
+	}
+div.image1 {
+
+  background-repeat: no-repeat;
+	background-size: cover;
+	position: ;
+	background-position: center center;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	padding: 0;
+	object-fit: contain;
+}
+div.item-text{
+
+	max-width: 250px;
+	align-self: start
+	color: #EEEEEE;
+}
+div.header-holder {
+
+}
+div.header {
+    max-width: 1200px ;
+    margin:0 auto;
+		display: grid;
+		grid-template-columns: 20% auto 20%;
+
+		/*padding: 15px;
+    background: #000;
+		grid-column-start: 3;
+		grid-column-end: 4;
+
+
+		align-items: baseline;
+		justify-content: center;*/
+
+}
+a.logo {
+  display:block;
+	color:#fff;
+	font-size:2em;
+	font-family: 'Roboto Slab', serif;
+	padding:1em;
+	text-decoration:none;
+}
+
+div.menu{
+	align-self: center;
+	justify-self: center;
+}
+
+div.menu a{
+	display:inline-block;
+	text-decoration:none;
+	font-family: 'Roboto Slab', serif;
+	font-size:1em;
+	padding:1em;
+	transition: all 0.5s;
+}
+
+div.menu a:link{color:#eee;}
+div.menu a:visited{color:#eee;}
+div.menu a:hover{color:#fff; background:#333;}
+
+a.search{
+	display:grid;
+	background:url(search.svg) no-repeat center center;
+	background-size:60%;
+	width:40px;
+	height:40px;
+	align-self: center;
+	justify-self: right;
+	margin-right:20px;
+	transition: all 0.5s;
+	border-radius: 50%;
+}
+
+a.search:hover{background-color:#333;}
+
+a.search span{display:none;}
+
+
+/*layout end*/
