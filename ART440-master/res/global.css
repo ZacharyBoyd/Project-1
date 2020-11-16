@@ -121,18 +121,27 @@ div.block-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2vh;
 }
+div.block-5 {
+	display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+		grid-column-start: column 2;
+		grid-column-end: column 4;
+    grid-gap: 2vh;
+	}
 div.item.mid {
+
     margin: 0 0 2vh 0;
 }
 div.item {
-    background: #fcc;
+
+    background:;
     min-height: 200px;
 
 		align-self: start;
 
 	}
 div.image1 {
-
+  display: block;
   background-repeat: no-repeat;
 	background-size: cover;
 	position: ;
@@ -143,6 +152,9 @@ div.image1 {
 	left:0;
 	padding: 0;
 	object-fit: contain;
+	width: 200px;
+
+
 }
 div.item-text{
 
